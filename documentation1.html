@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML - Simple Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul {
+            color: #555;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .section-title {
+            color: #4CAF50;
+        }
+        .example-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .note-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #FF9800;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn HTML - Simple Documentation</h1>
+</header>
+
+<main>
+    <section>
+        <h2 class="section-title">What is HTML?</h2>
+        <p>HTML (Hypertext Markup Language) is the standard language used to create and design webpages. It is used to describe the structure of web pages and content such as text, images, and links using markup tags.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Basic Structure of an HTML Document</h2>
+        <p>The basic structure of an HTML document consists of the following key elements:</p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> - Defines the document type and version of HTML</li>
+            <li><code>&lt;html&gt;</code> - The root element that encapsulates all content in the document</li>
+            <li><code>&lt;head&gt;</code> - Contains metadata like title, character encoding, and links to external resources (CSS, JavaScript)</li>
+            <li><code>&lt;body&gt;</code> - Contains the visible content of the web page</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Example HTML Code</h2>
+        <div class="example-box">
+            <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my first webpage!&lt;/h1&gt;
+    &lt;p&gt;This is an example of basic HTML structure.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Common HTML Tags</h2>
+        <p>Here are some common HTML tags used to structure web pages:</p>
+        <ul>
+            <li><code>&lt;h1&gt; to &lt;h6&gt;</code> - Headings (h1 is the largest, h6 is the smallest)</li>
+            <li><code>&lt;p&gt;</code> - Paragraphs for blocks of text</li>
+            <li><code>&lt;a&gt;</code> - Links (used to navigate between pages)</li>
+            <li><code>&lt;img&gt;</code> - Images (used to embed images on the page)</li>
+            <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> - Unordered (bulleted) and Ordered (numbered) lists</li>
+            <li><code>&lt;div&gt;</code> - Used for grouping content</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Attributes in HTML</h2>
+        <p>HTML elements can have attributes, which provide additional information about the element. Attributes are always written inside the opening tag of an element.</p>
+        <ul>
+            <li><strong>href</strong>: Specifies the URL of a link (used in the <code>&lt;a&gt;</code> tag)</li>
+            <li><strong>src</strong>: Specifies the source of an image (used in the <code>&lt;img&gt;</code> tag)</li>
+            <li><strong>alt</strong>: Specifies alternative text for images (used in the <code>&lt;img&gt;</code> tag)</li>
+            <li><strong>class</strong>: Specifies a class for styling</li>
+            <li><strong>id</strong>: Specifies a unique identifier for an element</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Links and Images</h2>
+        <p>To add links and images to your page, use the following HTML tags:</p>
+        <ul>
+            <li><code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code> - Creates a hyperlink</li>
+            <li><code>&lt;img src="image.jpg" alt="Description"&gt;</code> - Embeds an image</li>
+        </ul>
+        <div class="example-box">
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code></pre>
+            <pre><code>&lt;img src="image.jpg" alt="A beautiful scenery"&gt;</code></pre>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Lists in HTML</h2>
+        <p>HTML supports different types of lists: unordered lists and ordered lists. Here's how to create them:</p>
+        <ul>
+            <li><strong>Unordered List:</strong> Uses the <code>&lt;ul&gt;</code> tag and <code>&lt;li&gt;</code> for list items.</li>
+            <li><strong>Ordered List:</strong> Uses the <code>&lt;ol&gt;</code> tag and <code>&lt;li&gt;</code> for list items, but the items are numbered.</li>
+        </ul>
+        <div class="example-box">
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">A Note on HTML Formatting</h2>
+        <div class="note-box">
+            <p>HTML is not case-sensitive, but it's a good practice to write tag names in lowercase. This helps with readability and maintainability.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy;Thank you </p>
+</footer>
+
+</body>
+</html>
